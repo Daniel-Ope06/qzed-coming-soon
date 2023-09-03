@@ -1,0 +1,36 @@
+@import '/src/styles.scss';
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100lvh;
+
+    app-nav-bar {
+        position: fixed;
+        top: 1.56rem;
+        width: 100%;
+    }
+
+    app-theme-switch {
+        position: fixed;
+        top: 1.56rem;
+        right: 10%;
+    }
+
+    @media (max-width: $tablet-width) {
+        app-nav-bar { top: calc(100svh - 3.63rem) }
+        app-theme-switch { right: 1.19rem; }
+    }
+}
+
+.theme-bg {
+    color: $qzed-black;
+    background-color: $qzed-white;
+    transition: all 0.3s ease-out;
+    &.dark {
+        color: $qzed-white;
+        background-color: $qzed-black;
+    }
+}
