@@ -1,0 +1,29 @@
+@import '/src/styles.scss';
+
+.flex-col {
+    display: flex;
+    gap: 1.25rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orange { color: $qzed-orange; }
+.blue { color: $qzed-blue; }
+.transparent-blue { color: rgba($qzed-blue, 0.5); }
+
+.green-btn {
+    border: none;
+    border-radius: 100vw;
+    padding: 0.86rem 4.52rem;
+    background-color: $qzed-green;
+
+    @extend .qzed-p;
+    font-weight: 500;
+    color: $qzed-black;
+    span { color: $qzed-orange; }
+
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    &:hover { background-color: darken($qzed-green, 10%) }
+}
