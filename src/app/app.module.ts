@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 // common components
 import { NavBarComponent } from './components/common/nav-bar/nav-bar.component';
 import { ThemeSwitchComponent } from './components/common/theme-switch/theme-switch.component';
+import { WelcomeMsgComponent } from './components/common/welcome-msg/welcome-msg.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ThemeSwitchComponent } from './components/common/theme-switch/theme-swi
 
     // common
     NavBarComponent,
-    ThemeSwitchComponent
+    ThemeSwitchComponent,
+    WelcomeMsgComponent
   ],
   imports: [
     BrowserModule,
