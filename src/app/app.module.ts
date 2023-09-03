@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // common components
+import { NavBarComponent } from './components/common/nav-bar/nav-bar.component';
 import { ThemeSwitchComponent } from './components/common/theme-switch/theme-switch.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ThemeSwitchComponent } from './components/common/theme-switch/theme-swi
     AppComponent,
 
     // common
+    NavBarComponent,
     ThemeSwitchComponent
   ],
   imports: [
