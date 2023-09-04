@@ -1,0 +1,25 @@
+@import '/src/styles.scss';
+
+.theme-bg {
+    background-color: $qzed-white;
+    transition: all $theme-transition-time ease-out;
+    &.dark { background-color: $qzed-black; }
+}
+
+.logo {
+    width: 14.5rem;
+    object-fit: contain;
+}
+
+.content {
+    width: 65%;
+    margin-top: 2rem;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
