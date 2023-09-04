@@ -41,3 +41,26 @@ $qzed-font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     @media (max-width: $mobile-width) { font-size: 0.9375rem; }
 }
+
+$theme-transition-time: 0.3s;
+
+
+/** @pages */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: $qzed-font-family;
+}
+
+.desktop-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    @media (max-width: $tablet-width) { display: none; }
+}
+
