@@ -13,7 +13,10 @@ import { NavBarComponent } from './components/common/nav-bar/nav-bar.component';
 import { ThemeSwitchComponent } from './components/common/theme-switch/theme-switch.component';
 import { WelcomeMsgComponent } from './components/common/welcome-msg/welcome-msg.component';
 
-// desktop components
+// combined pages
+import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
+
+// desktop pages
 import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/coming-soon-desktop.component';
 
 
@@ -26,6 +29,9 @@ import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/
     NavBarComponent,
     ThemeSwitchComponent,
     WelcomeMsgComponent,
+
+    // combined
+    ComingSoonComponent,
 
     // desktop
     ComingSoonDesktopComponent
