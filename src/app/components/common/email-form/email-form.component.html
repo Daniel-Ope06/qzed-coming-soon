@@ -1,1 +1,18 @@
-<p>email-form works!</p>
+<div class="flex-row">
+    <!-- email -->
+    <div class="email-row"  [ngClass]="{ 'expand':isEmailExpanded }">
+        <button (click)="toggleEmail()" class="circle-fill" [title]="isEmailExpanded ? 'Submit Email' : 'Join Email List'">
+            <img *ngIf="!isEmailExpanded" src="../../../../assets/icons/email-icon.png" alt="email" class="icon"/>
+            <img *ngIf="isEmailExpanded" src="../../../../assets/icons/upload-icon.png" alt="upload" class="icon"/>
+        </button>
+
+        <input class="email-input" type="email" id="email" name="email" placeholder="your@email.com" required
+            [ngClass]="{ 'dark':isDarkTheme }" (keyup.enter)="toggleEmail"
+        />
+    </div>
+
+    <!-- whatsapp -->
+    <button (click)="openWhatsApp()" class="circle-outline" type="button" title="Join WhatsApp Group">
+        <img src="../../../../assets/icons/whatsapp-icon.png" alt="whatsapp" class="icon"/>
+    </button>
+</div>

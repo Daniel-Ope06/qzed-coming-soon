@@ -1,0 +1,91 @@
+@import '/src/styles.scss';
+
+.flex-row {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.circle-fill, .circle-outline {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(3, 6, 12, 0.25));
+    cursor: pointer;
+
+    .icon {
+        width: 1.86rem;
+        height: 1.86rem;
+        object-fit: contain;
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 3rem; height: 3rem;
+        .icon { width: 1.5rem; height: 1.5rem; }
+    }
+}
+
+.circle-fill {
+    border: none;
+    background-color: $qzed-orange;
+    &:hover { background-color: darken($qzed-orange, 10%); }
+}
+
+.circle-outline {
+    border: 2.5px solid $qzed-orange;
+    background-color: transparent;
+    &:hover { border-width: 4px; }
+}
+
+.email-row {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 100vw;
+    padding: 0.25rem;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid transparent;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    .email-input { display: none; }
+
+    &.expand {
+        width: 80%;
+        border: 1px solid $qzed-orange;
+        background-color: rgba($qzed-black, 0.3);
+        .email-input { display: block; }
+    }
+
+    @media (max-width: $mobile-width) {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+.email-input {
+    width: 80%;
+    @extend .qzed-p;
+    color: $qzed-black;
+
+    border: 1px solid $qzed-black;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    background-color: transparent;
+    transition: all $theme-transition-time ease-out;
+
+    &.dark {
+        color: $qzed-white;
+        border: 1px solid $qzed-white;
+    }
+
+    &::placeholder { opacity: 0.7; }
+
+    @media (max-width: $tablet-width) { width: 70%; }
+    @media (max-width: $mobile-width) { width: 50%; }
+}
