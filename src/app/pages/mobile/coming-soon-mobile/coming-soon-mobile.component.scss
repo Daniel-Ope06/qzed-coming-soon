@@ -1,0 +1,14 @@
+@import '/src/styles.scss';
+
+.mobile-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 68%;
+    row-gap: 2%;
+
+    img {
+        height: 100%;
+        object-fit: contain;
+        margin-inline: auto;
+    }
+}

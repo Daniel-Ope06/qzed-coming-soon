@@ -1,1 +1,7 @@
-<p>coming-soon-mobile works!</p>
+<div class="mobile-wrapper">
+    <img *ngIf="!isDarkTheme" src="../../../../assets/images/exam-bro.png" alt="exam"/>
+    <img *ngIf="isDarkTheme" src="../../../../assets/images/exam-bro-dark-mobile.png" alt="exam"/>
+    <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }">
+        <app-welcome-msg></app-welcome-msg>
+    </div>
+</div>
