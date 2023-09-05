@@ -2,15 +2,24 @@
 
 .flex-col {
     display: flex;
-    gap: 1.25rem;
+    height: 100%;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: $tablet-width) {
+        height: 75%;
+        padding: 0 1rem;
+    }
 }
 
 .orange { color: $qzed-orange; }
 .blue { color: $qzed-blue; }
 .transparent-blue { color: rgba($qzed-blue, 0.5); }
+.transparent-blue, .blue {
+    @media (max-width: $tablet-width) { color: $qzed-white; }
+}
 
 .green-btn {
     border: none;
