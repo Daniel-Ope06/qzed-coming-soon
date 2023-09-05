@@ -19,6 +19,9 @@ import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.co
 // desktop pages
 import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/coming-soon-desktop.component';
 
+// mobile pages
+import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/
     ComingSoonComponent,
 
     // desktop
-    ComingSoonDesktopComponent
+    ComingSoonDesktopComponent,
+
+    // mobile
+    ComingSoonMobileComponent
   ],
   imports: [
     BrowserModule,
