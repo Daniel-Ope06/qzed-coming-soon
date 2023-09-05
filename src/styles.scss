@@ -52,15 +52,39 @@ body {
     font-family: $qzed-font-family;
 }
 
-.desktop-wrapper {
+.desktop-wrapper, .mobile-wrapper {
     position: absolute;
     top: 0;
     width: 100vw;
     height: 100svh;
+}
+
+.desktop-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 6rem;
     @media (max-width: $tablet-width) { display: none; }
+}
+
+.mobile-wrapper {
+    padding-top: 2.25rem;
+    display: none;
+    @media (max-width: $tablet-width) { display: block; }
+}
+
+.mobile-bottom  {
+    background-image: url('./assets/images/bg-pattern-mobile-blue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    border: none;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+
+    &.dark {
+        background-image: url('./assets/images/bg-pattern-mobile.jpeg');
+    }
 }
 
