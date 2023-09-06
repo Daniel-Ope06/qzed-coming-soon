@@ -35,4 +35,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease-out;
     &:hover { background-color: darken($qzed-green, 10%) }
+    @media (max-width: $tablet-width) {
+        &:hover { background-color: $qzed-green; }
+    }
 }
