@@ -1,5 +1,4 @@
-$light-shade: #c8bcf6;
-$dark-shade: #1c0c59;
+@import '/src/styles.scss';
 
 .btn-wrapper {
     position: relative;
@@ -11,8 +10,11 @@ $dark-shade: #1c0c59;
     height: 2rem;
     border: none;
     border-radius: 100vw;
-    background-color: $light-shade;
-    &.dark { background-color: $dark-shade; }
+    background-color: $qzed-blue;
+
+    &.dark { background-color: $qzed-black; }
+    @media (min-width: $tablet-width) { &.dark { background-color: lighten($qzed-black, 10%); } }
+    @media (max-width: $tablet-width) { background-color: darken($qzed-blue, 5%); }
 }
 
 .circle {
@@ -27,7 +29,7 @@ $dark-shade: #1c0c59;
 
     #sun { display: none; }
     #moon { display: block; }
-    background-color: #1c1c1c;
+    background-color: $qzed-black;
     right: 0.25rem;
 
     &.dark {
@@ -36,4 +38,8 @@ $dark-shade: #1c0c59;
         background-color: #ffffff;
         transform: translateX(-1.5rem);
     }
+}
+
+#sun {
+    &.dark { stroke: $qzed-black; }
 }
