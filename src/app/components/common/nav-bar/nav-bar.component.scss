@@ -30,5 +30,7 @@ nav {
     @media (max-width: $tablet-width) {
         svg path { fill: rgba($qzed-white, 0.5); }
         span { display: none; }
+        &:hover { svg path { fill: rgba($qzed-white, 0.5); } }
+        &.active:hover { svg path { fill: $qzed-orange; } }
     }
 }

@@ -33,12 +33,18 @@
     border: none;
     background-color: $qzed-orange;
     &:hover { background-color: darken($qzed-orange, 10%); }
+    @media (max-width: $tablet-width) {
+        &:hover { background-color: $qzed-orange; }
+    }
 }
 
 .circle-outline {
     border: 2.5px solid $qzed-orange;
     background-color: transparent;
     &:hover { border-width: 4px; }
+    @media (max-width: $tablet-width) {
+        &:hover { border-width: 2.5px; }
+    }
 }
 
 .email-row {
