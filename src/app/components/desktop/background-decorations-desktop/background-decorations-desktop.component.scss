@@ -5,6 +5,10 @@
     top: 0;
     width: 100vw;
     height: 100svh;
+    z-index: -100;
+    background-color: $qzed-white;
+    transition: all $theme-transition-time ease-out;
+    &.dark { background-color: $qzed-black; }
     @media (max-width: $tablet-width) { display: none; }
 }
 

@@ -1,11 +1,5 @@
 @import '/src/styles.scss';
 
-.theme-bg {
-    background-color: $qzed-white;
-    transition: all $theme-transition-time ease-out;
-    &.dark { background-color: $qzed-black; }
-}
-
 .logo {
     width: 14.5rem;
     object-fit: contain;

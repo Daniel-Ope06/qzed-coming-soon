@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper" [ngClass]="{ 'dark': isDarkTheme }">
     <div id="blue-square" [ngClass]="{ 'dark': isDarkTheme }"></div>
 
     <svg id="confetti-badge" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
