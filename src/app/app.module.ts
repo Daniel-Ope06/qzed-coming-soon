@@ -13,6 +13,9 @@ import { NavBarComponent } from './components/common/nav-bar/nav-bar.component';
 import { ThemeSwitchComponent } from './components/common/theme-switch/theme-switch.component';
 import { WelcomeMsgComponent } from './components/common/welcome-msg/welcome-msg.component';
 
+// desktop components
+import { BackgroundDecorationsDesktopComponent } from './components/desktop/background-decorations-desktop/background-decorations-desktop.component';
+
 // combined pages
 import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
 
@@ -37,6 +40,7 @@ import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/com
     ComingSoonComponent,
 
     // desktop
+    BackgroundDecorationsDesktopComponent,
     ComingSoonDesktopComponent,
 
     // mobile
