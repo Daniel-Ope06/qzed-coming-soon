@@ -1,1 +1,33 @@
-<p>background-decorations-desktop works!</p>
+<div class="wrapper">
+    <div id="blue-square" [ngClass]="{ 'dark': isDarkTheme }"></div>
+
+    <svg id="confetti-badge" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+        <path d="M28 0L52.2487 14V42L28 56L3.75129 42V14L28 0Z"/>
+    </svg>
+
+    <svg id="confetti-square" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <rect width="40" height="40"/>
+    </svg>
+
+    <svg id="confetti-triangle" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="42" height="37" viewBox="0 0 42 37" fill="none">
+        <path d="M20.9999 0.333252L41.7845 36.3333H0.215332L20.9999 0.333252Z"/>
+    </svg>
+
+    <svg id="confetti-dot" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="12"/>
+    </svg>
+
+    <svg id="confetti-arch" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="71" height="24" viewBox="0 0 71 24" fill="none">
+        <path d="M3.94189 20.7805C7.52463 15.6535 12.3026 11.4765 17.8624 8.61107C23.4222 5.7456 29.5964 4.27787 35.8509 4.33485C42.1054 4.39183 48.2519 5.97181 53.7586 8.9381C59.2652 11.9044 63.9663 16.1677 67.455 21.3591" stroke-width="8"/>
+    </svg>
+
+    <svg id="confetti-ribbon" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="63" height="84" viewBox="0 0 63 84" fill="none">
+        <path d="M5.75293 70.5826L26.2433 65.0923L20.7529 44.6019L41.2433 39.1115L35.7529 18.6211L56.2433 13.1307" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <div id="blue-circle" [ngClass]="{ 'dark': isDarkTheme }"></div>
+
+    <svg id="confetti-circle" [ngClass]="{ 'dark': isDarkTheme }" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+        <path d="M52 27.8362C52 40.7533 41.3219 51.3449 28 51.3449C14.6781 51.3449 4 40.7533 4 27.8362C4 14.9191 14.6781 4.32739 28 4.32739C41.3219 4.32739 52 14.9191 52 27.8362Z" stroke-width="8"/>
+    </svg>
+</div>

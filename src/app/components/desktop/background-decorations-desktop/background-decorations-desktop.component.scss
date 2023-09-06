@@ -1,0 +1,95 @@
+@import '/src/styles.scss';
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100svh;
+    @media (max-width: $tablet-width) { display: none; }
+}
+
+#blue-square, #confetti-badge, #confetti-square, #confetti-triangle, #confetti-dot,
+#confetti-arch, #confetti-ribbon, #blue-circle, #confetti-circle {
+    transition: all $theme-transition-time ease-out;
+}
+
+#blue-square {
+    position: fixed;
+    top: 52.4%;
+    left: -0.8rem;
+
+    height: 6rem;
+    width: 6rem;
+    transform: rotate(-45deg);
+    background-color: #025A86;
+    &.dark { background-color: #026B9F; }
+}
+
+#confetti-badge {
+    position: fixed;
+    top: 30.1%;
+    left: 8%;
+    fill: #D9DBE9;
+    &.dark { fill: #202236; }
+}
+
+#confetti-square {
+    position: fixed;
+    top: 86.1%;
+    left: 10.9%;
+    fill: #D9DBE9;
+    &.dark { fill: #202236; }
+}
+
+#confetti-triangle {
+    position: fixed;
+    top: 5.6%;
+    left: 13.6%;
+    fill: #00CC67;
+    &.dark { fill: #00E673; }
+}
+
+#confetti-dot {
+    position: fixed;
+    top: 23.7%;
+    left: 22.4%;
+    fill: #C19CFC;
+    &.dark { fill: #32047C; }
+}
+
+#confetti-arch {
+    position: fixed;
+    top: 17.9%;
+    left: 73.9%;
+    stroke: #E2A21F;
+    &.dark { stroke: #E5AB36; }
+}
+
+#confetti-ribbon {
+    position: fixed;
+    top: 29.9%;
+    left: 87%;
+    stroke: #00A7E5;
+    &.dark { stroke: #00BBFF; }
+}
+
+#blue-circle {
+    position: fixed;
+    top: 60.7%;
+    right: -1.5rem;
+
+    height: 9rem;
+    width: 9rem;
+    border: none;
+    border-radius: 100vw;
+    background-color: #B3DBEF;
+    &.dark { background-color: #144761; }
+}
+
+#confetti-circle {
+    position: fixed;
+    bottom: 2rem;
+    right: 8rem;
+    stroke: #E40173;
+    &.dark { stroke: #FD017F; }
+}
