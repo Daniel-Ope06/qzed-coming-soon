@@ -18,6 +18,7 @@ import { BackgroundDecorationsDesktopComponent } from './components/desktop/back
 
 // combined pages
 import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
+import { FaqComponent } from './pages/combined/faq/faq.component';
 
 // desktop pages
 import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/coming-soon-desktop.component';
@@ -39,6 +40,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
 
     // combined
     ComingSoonComponent,
+    FaqComponent,
 
     // desktop
     BackgroundDecorationsDesktopComponent,
