@@ -24,6 +24,7 @@ import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/
 
 // mobile pages
 import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
+import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/com
     ComingSoonDesktopComponent,
 
     // mobile
-    ComingSoonMobileComponent
+    ComingSoonMobileComponent,
+    FaqMobileComponent
   ],
   imports: [
     BrowserModule,
