@@ -11,10 +11,7 @@
     border: none;
     border-radius: 100vw;
     background-color: $qzed-blue;
-
-    &.dark { background-color: $qzed-black; }
-    @media (min-width: $tablet-width) { &.dark { background-color: lighten($qzed-black, 10%); } }
-    @media (max-width: $tablet-width) { background-color: darken($qzed-blue, 5%); }
+    &.dark { background-color: lighten($qzed-black, 10%); }
 }
 
 .circle {
