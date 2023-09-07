@@ -1,1 +1,5 @@
-<p>faq-mobile works!</p>
+<div class="mobile-wrapper" [ngClass]="{ 'dark': isDarkTheme }">
+    <img *ngIf="!isDarkTheme" src="../../../../assets/images/faq-light.png" alt="exam"/>
+    <img *ngIf="isDarkTheme" src="../../../../assets/images/faq-dark.png" alt="exam"/>
+    <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }"></div>
+</div>
