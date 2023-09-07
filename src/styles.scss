@@ -78,6 +78,9 @@ body {
 .mobile-wrapper {
     padding-top: 2.25rem;
     display: none;
+    background-color: $qzed-white;
+    transition: background-color $theme-transition-time ease-out;
+    &.dark { background-color: $qzed-black; }
     @media (max-width: $tablet-width) { display: block; }
 }
 
