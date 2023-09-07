@@ -1,1 +1,9 @@
-<p>faq-desktop works!</p>
+<div class="desktop-wrapper" [ngClass]="{ 'dark': isDarkTheme }">
+    <img src="../../../../assets/images/qzed-logo.png" alt="QZed" class="logo"/>
+    <div class="content">
+        <img *ngIf="!isDarkTheme" src="../../../../assets/images/faq-light.png" alt="exam"/>
+        <img *ngIf="isDarkTheme" src="../../../../assets/images/faq-dark.png" alt="exam"/>
+        <div>FAQ HERE</div>
+    </div>
+    <a class="qzed-link" routerLink="/blog">Unlock Wisdom with QZED Blog. Dive In!</a>
+</div>

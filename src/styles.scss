@@ -42,6 +42,14 @@ $qzed-font-family: 'Poppins', sans-serif;
     @media (max-width: $mobile-width) { font-size: 0.9375rem; }
 }
 
+.qzed-link {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: $qzed-orange;
+    text-decoration: underline;
+    @media (max-width: $mobile-width) { font-size: 0.875rem; }
+}
+
 $theme-transition-time: 0.3s;
 
 
