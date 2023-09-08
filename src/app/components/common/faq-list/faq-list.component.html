@@ -1,6 +1,6 @@
 <div class="wrapper" [ngClass]="{ 'dark': isDarkTheme }">
     <h1 class="faq-header">Frequently Asked Questions</h1>
-    <div *ngIf="!(faqList$ | async)">LOADING</div>
+    <app-loading-spinner *ngIf="!(faqList$ | async)"></app-loading-spinner>
     <dl class="faq-list qzed-scroll" [ngClass]="{ 'dark': isDarkTheme }" *ngIf="(faqList$ | async)">
         <div *ngFor="let faq of faqs; let i = index" class="faq-item" [ngClass]="{ 'dark': isDarkTheme }">
             <div class="faq-question" [ngClass]="{ 'dark': isDarkTheme }">
