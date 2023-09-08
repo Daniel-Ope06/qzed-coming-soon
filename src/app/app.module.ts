@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 // common components
 import { EmailFormComponent } from './components/common/email-form/email-form.component';
+import { FaqListComponent } from './components/common/faq-list/faq-list.component';
 import { NavBarComponent } from './components/common/nav-bar/nav-bar.component';
 import { ThemeSwitchComponent } from './components/common/theme-switch/theme-switch.component';
 import { WelcomeMsgComponent } from './components/common/welcome-msg/welcome-msg.component';
@@ -35,6 +36,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
 
     // common
     EmailFormComponent,
+    FaqListComponent,
     NavBarComponent,
     ThemeSwitchComponent,
     WelcomeMsgComponent,
