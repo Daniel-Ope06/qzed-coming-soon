@@ -26,13 +26,12 @@
 
     #sun { display: none; }
     #moon { display: block; }
-    background-color: $qzed-black;
+    background-color: $qzed-white;
     right: 0.25rem;
 
     &.dark {
         #sun { display: block; }
         #moon { display: none; }
-        background-color: #ffffff;
         transform: translateX(-1.5rem);
     }
 }
