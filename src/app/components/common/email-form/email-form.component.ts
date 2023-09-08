@@ -6,7 +6,7 @@ import { ThemeSwitchService } from 'src/app/services/theme-switch.service';
   templateUrl: './email-form.component.html',
   styleUrls: ['./email-form.component.scss']
 })
-export class EmailFormComponent {
+export class EmailFormComponent implements OnInit {
   emailInput: string = '';
   isEmailExpanded: boolean = false;
   isDarkTheme: boolean = this.themeSwitchService.getTheme();
