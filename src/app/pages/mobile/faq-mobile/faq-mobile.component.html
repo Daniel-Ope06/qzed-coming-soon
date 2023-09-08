@@ -1,5 +1,12 @@
 <div class="mobile-wrapper" [ngClass]="{ 'dark': isDarkTheme }">
     <img *ngIf="!isDarkTheme" src="../../../../assets/images/faq-light.png" alt="exam"/>
     <img *ngIf="isDarkTheme" src="../../../../assets/images/faq-dark.png" alt="exam"/>
-    <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }"></div>
+    <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }">
+        <app-faq-list></app-faq-list>
+        <div class="flex-row">
+            <p class="qzed-p">Need more info?</p>
+            <button (click)="sendEmail()" class="blue-btn" [ngClass]="{ 'dark': isDarkTheme }">Send an Email</button>
+        </div>
+        <a class="qzed-link" routerLink="/blog">Unlock Wisdom with QZED Blog. Dive In!</a>
+    </div>
 </div>

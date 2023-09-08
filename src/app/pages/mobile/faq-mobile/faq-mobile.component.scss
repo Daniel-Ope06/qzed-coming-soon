@@ -14,3 +14,31 @@
         margin-inline: auto;
     }
 }
+
+.mobile-bottom {
+    @media (max-width: $tablet-width) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qzed-p { color: $qzed-white; }
+
+.blue-btn {
+    @extend .qzed-p;
+    font-weight: 500;
+    border: none;
+    border-radius: 100vw;
+    padding: 0.6rem 1.5rem;
+    background-color: $qzed-blue;
+    transition: color $theme-transition-time ease-out;
+    &.dark { color: $qzed-black; }
+}

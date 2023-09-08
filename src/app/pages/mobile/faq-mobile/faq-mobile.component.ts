@@ -16,4 +16,12 @@ export class FaqMobileComponent implements OnInit {
       this.isDarkTheme = isDarkTheme;
     });
   }
+
+  sendEmail(): void {
+    const emailAddress = 'qzedanswers@outlook.com';
+    const subject = 'Your Subject Here';
+    const body = 'Hi Qzed,\nYour email body goes here.';
+    const mailToLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailToLink, '_blank');
+  }
 }

@@ -1,0 +1,18 @@
+<div class="wrapper" [ngClass]="{ 'dark': isDarkTheme }">
+    <h1 class="faq-header">Frequently Asked Questions</h1>
+    <div *ngIf="!(faqList$ | async)">LOADING</div>
+    <dl class="faq-list qzed-scroll" [ngClass]="{ 'dark': isDarkTheme }" *ngIf="(faqList$ | async)">
+        <div *ngFor="let faq of faqs; let i = index" class="faq-item" [ngClass]="{ 'dark': isDarkTheme }">
+            <div class="faq-question" [ngClass]="{ 'dark': isDarkTheme }">
+                <dt>{{ faq['question'] }}</dt>
+
+                <button class="faq-button" [ngClass]="{ 'open': faqs[i].isOpen }" (click)="toggleOpen(i)" title="expand">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <path d="M6.03814 11.2522H9.95232V15.1663C9.95232 15.5642 10.2796 15.8978 10.6838 15.8978C11.0881 15.8978 11.4153 15.5642 11.4153 15.1663V11.2522H15.3295C15.7273 11.2522 16.061 10.9249 16.061 10.5207C16.061 10.1164 15.7273 9.78915 15.3295 9.78915H11.4153V5.87498C11.4153 5.47714 11.0881 5.14347 10.6838 5.14347C10.2796 5.14347 9.95232 5.47714 9.95232 5.87498V9.78915H6.03814C5.64031 9.78915 5.30664 10.1164 5.30664 10.5207C5.30664 10.9249 5.64031 11.2522 6.03814 11.2522Z" fill="#0059B3"/>
+                    </svg>
+                </button>
+            </div>
+            <dd class="faq-answer" [ngClass]="{ 'dark': isDarkTheme, 'open': faqs[i].isOpen }">{{ faq['answer'] }}</dd>
+        </div>
+    </dl>
+</div>

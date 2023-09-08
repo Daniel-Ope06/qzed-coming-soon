@@ -1,0 +1,94 @@
+@import '/src/styles.scss';
+
+.wrapper {
+    padding: 1.7rem;
+    border-radius: 0.7985rem;
+    background-color: lighten($qzed-white, 10%);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.15);
+    &.dark { background-color: darken($qzed-black, 10%); }
+
+    display: flex;
+    flex-direction: column;
+    height: calc(60vh - 3.4rem);
+
+    @media (max-width: $tablet-width) {
+        box-shadow: none;
+        padding:  0 1.7rem;
+        height: calc(50vh - 5.25rem);
+        background-color: transparent;
+        &.dark { background-color: transparent; }
+    }
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden scroll;
+}
+
+.faq-item {
+    padding: 1.25rem 0;
+    width: calc(100% - 0.5em);
+    transition: border-top $theme-transition-time ease-out;
+    border-top: 2px solid rgba($qzed-blue, 0.3);
+    &.dark { border-top: 2px solid rgba($qzed-blue, 0.5) }
+
+    @media (max-width: $tablet-width) {
+        border-top: 2px solid $qzed-white;
+        &.dark { border-top: 2px solid $qzed-orange; }
+    }
+}
+
+.faq-header, .faq-question, .faq-answer {
+    margin: 0;
+    font-family: $qzed-font-family;
+    transition: color $theme-transition-time ease-out;
+}
+
+.faq-header {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $qzed-orange;
+    @media (max-width: $tablet-width) { display: none; }
+}
+
+.faq-question {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: $qzed-black;
+    dt { max-width: 85%; }
+    &.dark dt { color: $qzed-white; }
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-button {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: transform 0.3s ease-out;
+    &.open { transform: rotate(45deg); }
+    @media (max-width: $tablet-width) { svg path { fill: $qzed-orange; } }
+}
+
+.faq-answer {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba($qzed-black, 0.8);
+    &.dark { color: rgba($qzed-white, 0.8); }
+
+    margin: 0;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, margin-top 0.3s ease-out;
+
+    &.open {
+        max-height: 20rem;
+        margin-top: 1rem;
+    }
+
+    @media (max-width: $tablet-width) { color: $qzed-white; }
+}
