@@ -9,12 +9,12 @@
 
     display: flex;
     flex-direction: column;
-    height: calc(60vh - 3.4rem);
+    height: calc(60svh - 3.4rem);
 
     @media (max-width: $tablet-width) {
         box-shadow: none;
         padding:  0 1.7rem;
-        height: calc(50vh - 5.25rem);
+        height: calc(50svh - 6.25rem);
         background-color: transparent;
         &.dark { background-color: transparent; }
     }

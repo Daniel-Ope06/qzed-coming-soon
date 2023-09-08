@@ -22,6 +22,6 @@ export class FaqMobileComponent implements OnInit {
     const subject = 'Your Subject Here';
     const body = 'Hi Qzed,\nYour email body goes here.';
     const mailToLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(mailToLink, '_blank');
+    window.open(mailToLink);
   }
 }
