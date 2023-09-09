@@ -19,7 +19,7 @@ import { WelcomeMsgComponent } from './components/common/welcome-msg/welcome-msg
 import { BackgroundDecorationsDesktopComponent } from './components/desktop/background-decorations-desktop/background-decorations-desktop.component';
 
 // combined pages
-import { BlogsComponent } from './pages/combined/blogs/blogs.component';
+import { BlogComponent } from './pages/combined/blog/blog.component';
 import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
 import { FaqComponent } from './pages/combined/faq/faq.component';
 
@@ -28,7 +28,7 @@ import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/
 import { FaqDesktopComponent } from './pages/desktop/faq-desktop/faq-desktop.component';
 
 // mobile pages
-import { BlogsMobileComponent } from './pages/mobile/blogs-mobile/blogs-mobile.component';
+import { BlogMobileComponent } from './pages/mobile/blog-mobile/blog-mobile.component';
 import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
 import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.component';
 
@@ -46,7 +46,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
     WelcomeMsgComponent,
 
     // combined
-    BlogsComponent,
+    BlogComponent,
     ComingSoonComponent,
     FaqComponent,
 
@@ -56,7 +56,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
     FaqDesktopComponent,
 
     // mobile
-    BlogsMobileComponent,
+    BlogMobileComponent,
     ComingSoonMobileComponent,
     FaqMobileComponent
   ],
