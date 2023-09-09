@@ -19,6 +19,7 @@ import { WelcomeMsgComponent } from './components/common/welcome-msg/welcome-msg
 import { BackgroundDecorationsDesktopComponent } from './components/desktop/background-decorations-desktop/background-decorations-desktop.component';
 
 // combined pages
+import { BlogsComponent } from './pages/combined/blogs/blogs.component';
 import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
 import { FaqComponent } from './pages/combined/faq/faq.component';
 
@@ -45,6 +46,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
     WelcomeMsgComponent,
 
     // combined
+    BlogsComponent,
     ComingSoonComponent,
     FaqComponent,
 
