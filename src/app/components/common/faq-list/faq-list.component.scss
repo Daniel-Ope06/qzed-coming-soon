@@ -55,8 +55,10 @@
 .faq-question {
     font-weight: 700;
     font-size: 1.125rem;
-    color: $qzed-white;
+    color: $qzed-black;
     dt { max-width: 85%; }
+    &.dark dt { color: $qzed-white; }
+    @media (max-width: $tablet-width) { color: $qzed-white; }
 
     display: flex;
     align-items: center;
@@ -76,8 +78,8 @@
 .faq-answer {
     font-weight: 400;
     font-size: 1rem;
-    color: rgba($qzed-black, 0.8);
-    &.dark { color: rgba($qzed-white, 0.8); }
+    color: rgba($qzed-black, 0.9);
+    &.dark { color: rgba($qzed-white, 0.9); }
 
     margin: 0;
     max-height: 0rem;
