@@ -55,9 +55,8 @@
 .faq-question {
     font-weight: 700;
     font-size: 1.125rem;
-    color: $qzed-black;
+    color: $qzed-white;
     dt { max-width: 85%; }
-    &.dark dt { color: $qzed-white; }
 
     display: flex;
     align-items: center;
