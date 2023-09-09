@@ -1,1 +1,13 @@
-<p>blogs-mobile works!</p>
+<div class="mobile-wrapper" [ngClass]="{ 'dark': isDarkTheme }">
+    <h1 class="page-header">Blog</h1>
+    <div></div>
+
+    <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }">
+        <div class="filter-row">
+            <ng-container *ngFor="let btn of buttons">
+                <button [ngClass]="{ 'selected': btn.selected, 'dark': isDarkTheme }" (click)="onButtonClick(btn)">{{btn.text}}</button>
+            </ng-container>
+        </div>
+        <app-blog-list-mobile></app-blog-list-mobile>
+    </div>
+</div>
