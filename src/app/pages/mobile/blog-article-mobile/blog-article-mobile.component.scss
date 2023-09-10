@@ -9,6 +9,32 @@
     }
 }
 
+.back-btn {
+    position: fixed;
+    top: 1.56rem;
+    left: 1.19rem;
+    z-index: 1000;
+
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 100vw;
+    background-color: $qzed-orange;
+
+    svg {
+        position: absolute;
+        top: 0.45rem;
+        left: 0.35rem;
+    }
+
+    svg path {
+        fill: $qzed-white;
+        transition: fill $theme-transition-time ease-out;
+    }
+
+    &.dark { svg path { fill: $qzed-black; } }
+}
+
 .loading-spinner {
     z-index: 1000;
     display: grid;

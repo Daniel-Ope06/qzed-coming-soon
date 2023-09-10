@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Blog } from 'src/app/models/blog.model';
+import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { Observable, Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
@@ -18,7 +19,7 @@ export class BlogArticleMobileComponent implements OnInit {
   blogArticle$: Observable<any> | undefined;
   blog!: Blog;
 
-  constructor(private contentfulService: ContentfulService, private location: Location, private title: Title, private route: ActivatedRoute, private themeSwitchService: ThemeSwitchService) { }
+  constructor(private contentfulService: ContentfulService, private location: Location, private title: Title, private route: ActivatedRoute, private themeSwitchService: ThemeSwitchService, private router: Router) { }
 
   ngOnInit(): void {
     this.getBlogArticle();
@@ -53,5 +54,9 @@ export class BlogArticleMobileComponent implements OnInit {
       });
       this.title.setTitle(`QZed | ${this.blog.title}`);
     });
+  }
+
+  routeToBlogList(): void {
+    this.router.navigate(['/blog']);
   }
 }
