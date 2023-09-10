@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 // my imported modules
 import { FormsModule } from '@angular/forms';
+import { MarkdownModule } from 'ngx-markdown';
 
 // common components
 import { EmailFormComponent } from './components/common/email-form/email-form.component';
@@ -71,7 +72,8 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
