@@ -56,4 +56,8 @@ export class BlogListMobileComponent implements OnInit {
       return this.blogs.filter((blog: Blog) => blog.category === category);
     }
   }
+
+  routeToBlog(id: string): void {
+    this.blogService.routeToBlog(id);
+  }
 }

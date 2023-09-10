@@ -22,6 +22,7 @@ import { BackgroundDecorationsDesktopComponent } from './components/desktop/back
 import { BlogListMobileComponent } from './components/mobile/blog-list-mobile/blog-list-mobile.component';
 
 // combined pages
+import { BlogArticleComponent } from './pages/combined/blog-article/blog-article.component';
 import { BlogComponent } from './pages/combined/blog/blog.component';
 import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
 import { FaqComponent } from './pages/combined/faq/faq.component';
@@ -31,6 +32,7 @@ import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/
 import { FaqDesktopComponent } from './pages/desktop/faq-desktop/faq-desktop.component';
 
 // mobile pages
+import { BlogArticleMobileComponent } from './pages/mobile/blog-article-mobile/blog-article-mobile.component';
 import { BlogMobileComponent } from './pages/mobile/blog-mobile/blog-mobile.component';
 import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
 import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.component';
@@ -49,6 +51,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
     WelcomeMsgComponent,
 
     // combined
+    BlogArticleComponent,
     BlogComponent,
     ComingSoonComponent,
     FaqComponent,
@@ -59,6 +62,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
     FaqDesktopComponent,
 
     // mobile
+    BlogArticleMobileComponent,
     BlogListMobileComponent,
     BlogMobileComponent,
     ComingSoonMobileComponent,
