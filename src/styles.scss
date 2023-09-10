@@ -50,6 +50,19 @@ $qzed-font-family: 'Poppins', sans-serif;
     @media (max-width: $mobile-width) { font-size: 0.875rem; }
 }
 
+markdown {
+    h1 {
+        @extend .qzed-h1;
+        white-space: balance;
+        text-transform: uppercase;
+    }
+    h2 { @extend .qzed-h2; }
+    p { @extend .qzed-p; }
+    strong { font-weight: 700; }
+    a { @extend .qzed-link; }
+    ol, ul { @extend .qzed-p; }
+}
+
 $theme-transition-time: 0.3s;
 
 

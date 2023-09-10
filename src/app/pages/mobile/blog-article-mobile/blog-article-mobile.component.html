@@ -34,7 +34,7 @@
 
     <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }">
         <div class="blog-article qzed-scroll" *ngIf="(blogArticle$ | async)" [ngClass]="{ 'dark': isDarkTheme }">
-            <p>{{ blog['article'] }}</p>
+            <div class="content"><markdown ngPreserveWhitespaces>{{ blog['article'] }}</markdown></div>
         </div>
     </div>
 </div>
