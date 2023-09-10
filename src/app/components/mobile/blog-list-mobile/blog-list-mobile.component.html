@@ -1,7 +1,7 @@
 <div class="wrapper" [ngClass]="{ 'dark': isDarkTheme }">
     <app-loading-spinner *ngIf="!(blogList$ | async)"></app-loading-spinner>
     <div class="blog-list qzed-scroll" [ngClass]="{ 'dark': isDarkTheme }" *ngIf="(blogList$ | async)">
-        <button *ngFor="let blog of blogs; let i = index" class="blog-item" [ngClass]="{ 'dark': isDarkTheme }">
+        <button *ngFor="let blog of filteredBlogs; let i = index" class="blog-item" [ngClass]="{ 'dark': isDarkTheme }">
             <img [src]="'https:' + blog['imgUrl']" alt="blog image">
             <div class="blog-content">
                 <h3 class="blog-title" [ngClass]="{ 'dark': isDarkTheme }">{{ blog['title'] }}</h3>

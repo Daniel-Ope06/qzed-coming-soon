@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeSwitchService } from 'src/app/services/theme-switch.service';
+import { BlogService } from 'src/app/services/blog.service';
 
 interface Button {
   text: string;
@@ -19,7 +20,7 @@ export class BlogMobileComponent implements OnInit {
     { text: 'Academic', selected: false }
   ];
 
-  constructor(private themeSwitchService: ThemeSwitchService) { }
+  constructor(private themeSwitchService: ThemeSwitchService, private blogService: BlogService) { }
 
   ngOnInit(): void {
     this.themeSwitchService.isDarkTheme$.subscribe((isDarkTheme: boolean) => {
@@ -30,5 +31,6 @@ export class BlogMobileComponent implements OnInit {
   onButtonClick(selectedButton: Button) {
     this.buttons.forEach(btn => btn.selected = false);
     selectedButton.selected = true;
+    this.blogService.setBlogCategory(selectedButton.text);
   }
 }
