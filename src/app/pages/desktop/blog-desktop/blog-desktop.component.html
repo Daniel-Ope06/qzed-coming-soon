@@ -1,0 +1,8 @@
+<div class="desktop-wrapper" [ngClass]="{ 'dark': isDarkTheme }">
+    <img src="../../../../assets/images/qzed-logo.png" alt="QZed" class="logo"/>
+    <div class="content">
+        <img *ngIf="!isDarkTheme" src="../../../../assets/images/blog-light.png" alt="blog image"/>
+        <img *ngIf="isDarkTheme" src="../../../../assets/images/blog-dark.png" alt="blog image"/>
+        <app-faq-list></app-faq-list>
+    </div>
+</div>

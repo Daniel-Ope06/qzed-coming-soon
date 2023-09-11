@@ -29,6 +29,7 @@ import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.co
 import { FaqComponent } from './pages/combined/faq/faq.component';
 
 // desktop pages
+import { BlogDesktopComponent } from './pages/desktop/blog-desktop/blog-desktop.component';
 import { ComingSoonDesktopComponent } from './pages/desktop/coming-soon-desktop/coming-soon-desktop.component';
 import { FaqDesktopComponent } from './pages/desktop/faq-desktop/faq-desktop.component';
 
@@ -59,6 +60,7 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
 
     // desktop
     BackgroundDecorationsDesktopComponent,
+    BlogDesktopComponent,
     ComingSoonDesktopComponent,
     FaqDesktopComponent,
 
