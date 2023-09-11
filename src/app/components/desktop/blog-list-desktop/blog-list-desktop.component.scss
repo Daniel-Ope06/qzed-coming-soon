@@ -1,0 +1,107 @@
+@import '/src/styles.scss';
+
+.wrapper {
+    padding: 1.7rem;
+    border-radius: 0.7985rem;
+    background-color: lighten($qzed-white, 10%);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.15);
+    &.dark { background-color: darken($qzed-black, 10%); }
+
+    display: flex;
+    flex-direction: column;
+    height: calc(60svh - 3.4rem);
+}
+
+.blog-header {
+    @extend .qzed-h1;
+    font-size: 1.5rem;
+    color: $qzed-blue;
+}
+
+.blog-grid {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0.5em;
+    overflow-y: auto;
+}
+
+.blog-item {
+    display: grid;
+    row-gap: 0.75rem;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    img {
+        width: 100%;
+        height: 7rem;
+        object-fit: cover;
+    }
+}
+
+.blog-description {
+    display: flex;
+    gap: 0.25rem;
+    align-items: flex-start;
+    flex-direction: column;
+
+    time, h3 {
+        @extend .qzed-p;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    time {
+        font-size: 0.75rem;
+        color: $qzed-orange;
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: $qzed-blue;
+    }
+}
+
+.details-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.blog-detail {
+    @extend .qzed-p;
+    color: lighten($qzed-black, 35%);
+    transition: color $theme-transition-time ease-out;
+    font-weight: 400;
+    font-size: 0.75rem;
+
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    height: 0.75rem;
+
+    .circle {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 100vw;
+        background-color: lighten($qzed-black, 35%);
+        transition: background-color $theme-transition-time ease-out;
+    }
+
+    svg g path {
+        fill: lighten($qzed-black, 35%);
+        transition: fill $theme-transition-time ease-out;
+    }
+
+    &.dark {
+        color: darken($qzed-white, 35%);
+        .circle { background-color: darken($qzed-white, 35%); }
+        svg g path { fill: darken($qzed-white, 35%); }
+    }
+}
