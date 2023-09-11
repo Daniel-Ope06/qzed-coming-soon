@@ -8,6 +8,7 @@
     &.dark { background-color: darken($qzed-black, 10%); }
 
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     height: calc(60svh - 3.4rem);
 }
