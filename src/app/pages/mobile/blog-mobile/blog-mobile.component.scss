@@ -8,10 +8,8 @@
         row-gap: 2%;
     }
 
-    img {
-        height: 100%;
-        object-fit: contain;
-        margin-inline: auto;
+    app-poster-list-mobile {
+        margin-top: 2rem;
     }
 }
 
@@ -29,7 +27,7 @@
     color: $qzed-blue;
 
     position: absolute;
-    top: 1.56rem;
+    top: 1rem;
     left: 1.19rem;
 }
 

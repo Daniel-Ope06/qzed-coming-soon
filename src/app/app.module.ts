@@ -40,6 +40,7 @@ import { BlogArticleMobileComponent } from './pages/mobile/blog-article-mobile/b
 import { BlogMobileComponent } from './pages/mobile/blog-mobile/blog-mobile.component';
 import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
 import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.component';
+import { PosterListMobileComponent } from './components/mobile/poster-list-mobile/poster-list-mobile.component';
 
 
 @NgModule({
@@ -73,7 +74,8 @@ import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.compone
     BlogListMobileComponent,
     BlogMobileComponent,
     ComingSoonMobileComponent,
-    FaqMobileComponent
+    FaqMobileComponent,
+    PosterListMobileComponent
   ],
   imports: [
     BrowserModule,
