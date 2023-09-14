@@ -1,4 +1,4 @@
-<app-loading-spinner *ngIf="!(posterList$ | async)"></app-loading-spinner>
+<!-- <app-loading-spinner *ngIf="!(posterList$ | async)"></app-loading-spinner> -->
 <div class="poster-list" *ngIf="(posterList$ | async)">
     <button class="poster-item" *ngFor="let poster of posters" (click)="selectPoster(poster)">
         <img class="poster-image" [src]="'https:' + poster['imgUrl']" alt="poster">
