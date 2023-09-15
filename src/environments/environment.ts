@@ -5,6 +5,7 @@ export const environment = {
     storageBucket: 'qzedanswers.appspot.com',
     apiKey: 'AIzaSyAx3stvWudlLYGDDOfAyRROxfv0bO_rXCU',
     authDomain: 'qzedanswers.firebaseapp.com',
+    databaseURL: "https://qzedanswers-default-rtdb.europe-west1.firebasedatabase.app",
     messagingSenderId: '480821697239',
     measurementId: 'G-KQQYK76HQR',
   },

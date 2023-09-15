@@ -79,6 +79,7 @@
     width: 55%;
     @extend .qzed-p;
     color: $qzed-black;
+    text-transform: lowercase;
 
     border: 1px solid $qzed-black;
     border-radius: 0.5rem;
@@ -100,4 +101,41 @@
     }
 
     @media (max-width: $mobile-width) { width: 50%; }
+}
+
+
+.popUp {
+    position: absolute;
+    top: 10rem; left: 50%;
+    transform: translateX(-50%);
+
+    color: $qzed-white;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    white-space: pre-line;
+    background-color: $qzed-orange;
+    animation: fadeInOut 4s ease-in-out forwards;
+    &.hide { display: none; }
+
+    @media (max-width: $mobile-width) {
+        top: 5rem;
+        width: 80vw;
+        padding: 0.5rem 0;
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
 }

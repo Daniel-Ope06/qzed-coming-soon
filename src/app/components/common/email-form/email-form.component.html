@@ -7,7 +7,7 @@
         </button>
 
         <input class="email-input" type="email" id="email" name="email" placeholder="your@email.com" required
-            [ngClass]="{ 'dark':isDarkTheme }" (keyup.enter)="toggleEmail"
+            [ngClass]="{ 'dark':isDarkTheme }" (keyup.enter)="toggleEmail" [(ngModel)]="emailInput"
         />
     </div>
 
@@ -15,4 +15,8 @@
     <button (click)="openWhatsApp()" class="circle-outline" type="button" title="Join WhatsApp Group">
         <img src="../../../../assets/icons/whatsapp-icon.png" alt="whatsapp" class="icon"/>
     </button>
+</div>
+
+<div class="popUp" [ngClass]="{ 'hide': !isPopUpVisible }">
+    <p>{{ popUpMsg }}</p>
 </div>
