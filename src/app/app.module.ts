@@ -4,6 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// firebase modules
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+
 // my imported modules
 import { FormsModule } from '@angular/forms';
 import { MarkdownModule } from 'ngx-markdown';
@@ -41,6 +46,7 @@ import { BlogMobileComponent } from './pages/mobile/blog-mobile/blog-mobile.comp
 import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
 import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.component';
 import { PosterListMobileComponent } from './components/mobile/poster-list-mobile/poster-list-mobile.component';
+
 
 
 @NgModule({
@@ -82,6 +88,8 @@ import { PosterListMobileComponent } from './components/mobile/poster-list-mobil
     AppRoutingModule,
     FormsModule,
     MarkdownModule.forRoot(),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
   ],
   providers: [],
   bootstrap: [AppComponent]
