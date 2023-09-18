@@ -32,6 +32,7 @@ import { BlogArticleComponent } from './pages/combined/blog-article/blog-article
 import { BlogComponent } from './pages/combined/blog/blog.component';
 import { ComingSoonComponent } from './pages/combined/coming-soon/coming-soon.component';
 import { FaqComponent } from './pages/combined/faq/faq.component';
+import { FeaturesComponent } from './pages/combined/features/features.component';
 
 // desktop pages
 import { BlogArticleDesktopComponent } from './pages/desktop/blog-article-desktop/blog-article-desktop.component';
@@ -45,6 +46,7 @@ import { BlogArticleMobileComponent } from './pages/mobile/blog-article-mobile/b
 import { BlogMobileComponent } from './pages/mobile/blog-mobile/blog-mobile.component';
 import { ComingSoonMobileComponent } from './pages/mobile/coming-soon-mobile/coming-soon-mobile.component';
 import { FaqMobileComponent } from './pages/mobile/faq-mobile/faq-mobile.component';
+import { FeaturesMobileComponent } from './pages/mobile/features-mobile/features-mobile.component';
 import { PosterListMobileComponent } from './components/mobile/poster-list-mobile/poster-list-mobile.component';
 
 
@@ -66,6 +68,7 @@ import { PosterListMobileComponent } from './components/mobile/poster-list-mobil
     BlogComponent,
     ComingSoonComponent,
     FaqComponent,
+    FeaturesComponent,
 
     // desktop
     BackgroundDecorationsDesktopComponent,
@@ -81,6 +84,7 @@ import { PosterListMobileComponent } from './components/mobile/poster-list-mobil
     BlogMobileComponent,
     ComingSoonMobileComponent,
     FaqMobileComponent,
+    FeaturesMobileComponent,
     PosterListMobileComponent
   ],
   imports: [

@@ -1,0 +1,24 @@
+<div class="mobile-wrapper" [ngClass]="{ 'dark': isDarkTheme }">
+    <h1 class="page-header">Features</h1>
+
+    <div class="feature-list" *ngIf="(featureList$ | async)">
+        <button *ngFor="let feature of features; let i = index" class="feature-item" [ngClass]="{ 'completed': feature.isCompleted }" (click)="selectFeature(i)">
+            <span>{{ feature['title'] }}</span>
+        </button>
+    </div>
+    <div *ngIf="!(featureList$ | async)"></div>
+
+    <div class="mobile-bottom" [ngClass]="{ 'dark': isDarkTheme }">
+        <app-loading-spinner *ngIf="!(featureList$ | async)"></app-loading-spinner>
+        <div *ngIf="(featureList$ | async)" class="selected-feature" [ngClass]="{ 'dark': isDarkTheme }">
+            <div class="content">
+                <h1>{{ selectedFeature['title'] }}</h1>
+                <time *ngIf="selectedFeature['isCompleted']" [attr.datetime]="selectedFeature['launchDate']">Launched: {{ selectedFeature['launchDate'] | date:'d MMM yyyy' }}</time>
+                <p *ngIf="!selectedFeature['isCompleted']">In development</p>
+                <ul class="detail-list">
+                    <li *ngFor="let detail of selectedFeature['details']">{{ detail }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
