@@ -2,7 +2,7 @@
 <div class="poster-list" *ngIf="(posterList$ | async)">
     <button class="poster-item" *ngFor="let poster of posters" (click)="selectPoster(poster)">
         <img class="poster-image" [src]="'https:' + poster['imgUrl']" alt="poster">
-        <p class="poster-author" [ngClass]="{ 'dark': isDarkTheme }">{{ poster['author'] }}</p>
+        <!-- <p class="poster-author" [ngClass]="{ 'dark': isDarkTheme }">{{ poster['author'] }}</p> -->
     </button>
 </div>
 
@@ -13,6 +13,8 @@
             <path d="M8 8.00049L24.9706 24.9711" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
     </button>
+
+    <button class="download-button" type="button" (click)="downloadImage()">download</button>
 
     <img class="selected-poster" [src]="'https:' + selectedPoster['imgUrl']" alt="poster">
 </div>

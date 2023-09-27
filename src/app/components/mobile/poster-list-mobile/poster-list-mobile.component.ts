@@ -14,6 +14,7 @@ export class PosterListMobileComponent {
   posterList$: Observable<any> | undefined;
   isPosterSelected: boolean = false;
   selectedPoster: Poster = new Poster('', '', '');
+  selectedPosterIndex: number = 0;
   posters: Poster[] = [];
 
   constructor(private themeSwitchService: ThemeSwitchService, private contentfulService: ContentfulService) { }
@@ -38,6 +39,7 @@ export class PosterListMobileComponent {
     this.selectedPoster['imgUrl'] = poster['imgUrl'];
     this.selectedPoster['author'] = poster['author'];
     this.selectedPoster['caption'] = poster['caption'];
+    this.selectedPosterIndex = this.posters.indexOf(poster);
     this.isPosterSelected = true;
   }
 
@@ -45,13 +47,15 @@ export class PosterListMobileComponent {
     this.isPosterSelected = false;
   }
 
-  // downloadImage(imgUrl: string) {
-  //   const link = document.createElement('a');
-  //   link.href = imgUrl;
-  //   link.download = "qzed_poster";
-  //   link.target = '_blank';
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // }
+  downloadImage(): void {
+    const selectedPosterUrl = 'https:' + this.posters[this.selectedPosterIndex].imgUrl;
+    const link = document.createElement('a');
+    link.href = selectedPosterUrl;
+    link.download = "qzed-poster";
+    link.style.display = 'none';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 }

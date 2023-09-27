@@ -39,20 +39,20 @@
     object-fit: cover;
 }
 
-.poster-author {
-    @extend .qzed-p;
-    color: $qzed-white;
-    font-weight: 500;
-    font-size: 0.75rem;
-    text-align: left;
+// .poster-author {
+//     @extend .qzed-p;
+//     color: $qzed-black;
+//     font-weight: 500;
+//     font-size: 0.75rem;
+//     text-align: left;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: calc(100% - 0.5rem);
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-}
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: calc(100% - 0.5rem);
+//     padding-bottom: 0.5rem;
+//     padding-left: 1rem;
+// }
 
 // When zooming into image
 .selected-poster {
@@ -71,6 +71,19 @@
         stroke: $qzed-orange;
         stroke-width: 0.25rem;
     }
+}
+
+.download-button {
+    position: absolute;
+    top: 1.56rem;
+    left: 1.19rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: $qzed-orange;
+    @extend .qzed-h2;
+    font-size: 1.25rem;
+    color: $qzed-white;
 }
 
 .overlay {
