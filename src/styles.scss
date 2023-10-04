@@ -44,7 +44,7 @@ $qzed-font-family: 'Poppins', sans-serif;
 
 .qzed-link {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: $qzed-orange;
     text-decoration: underline;
     @media (max-width: $mobile-width) { font-size: 0.875rem; }
@@ -53,10 +53,12 @@ $qzed-font-family: 'Poppins', sans-serif;
 markdown {
     h1 {
         @extend .qzed-h1;
+        margin: 0;
         white-space: balance;
         text-transform: uppercase;
     }
-    h2 { @extend .qzed-h2; }
+    h2 { @extend .qzed-h2; margin: 0; }
+    h3 { @extend .qzed-p; font-size: 1rem; font-weight: 700; margin: 0; }
     p { @extend .qzed-p; }
     strong { font-weight: 700; }
     a { @extend .qzed-link; }
